@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jamie Briggs - Hexagonal Grid Reference</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="webGL/Hexagonal Grid Reference/TemplateData/UnityProgress.js"></script>
+		<script src="webGL/Hexagonal Grid Reference/Build/UnityLoader.js"></script>
+		<script>
+		  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Build.json", {onProgress: UnityProgress});
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+				<a href="index.html" class="title">JAMIE BRIGGS</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="aboutme.html">About Me</a></li>
+						<li><a href="portfolio.html" class="active">Portfolio</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Hexagonal Grid Reference</h1>
+							<div class="imageTop">
+								<span class="image fit"><img src="images/civ-5-grid.jpg" alt="" /></span>
+							</div>
+							<p>With some games, tile based movement is implemented. However such tiles can end 
+								up being square grid based, usually used in the Command and Conquer games or in 
+								Final Fantasy Tactics. Having a square grid gives structure to games where a 
+								lot of mechanics are being used in one go to give an easier, more enjoyable experience</p>
+							<p>
+								<span class="image right"><img src="images/sims-grid.jpg" alt="Jamie Briggs" /></span>
+								In Sims, grid mechanics are used for building to ensure furniture and walls all fit in nicely, 
+								so the plater doesn't neet to worry about placement.
+							</p>
+							<p>This grid style placement can end up being used constantly within games, and can lead to
+								 familiarity between similar games of the same genre, or even an unnaturally “Manhattan style” 
+								 layout all over the game which can get repetitive and boring. To fix this problem, a hexagonal 
+								 grid can be used instead; this doesn’t mean using a square grid is necessarily a bad thing, 
+								 its all just comes down to what kind of game the grid will be implemented into as using a 
+								 hexagon grid in Sims would end up over complicating the game and giving an unpleasant experience.
+							</p>
+							<p>
+								A hexagonal grid within a game can make a more natural world landscape as apposed to mountains 
+								 and landscape following a more block styled nature such as Minecraft. Games such as Civilisation 5 
+								 and onward use this hexagonal grid as apposed to their older counterparts as it makes the 
+								 game more realistic in terms of land generation. It also gives better tactics in terms of 
+								 how you can go about doing various things within the game in order to get the better outcome, 
+								 such as manoeuvring units behind enemy units easier.
+							</p>
+							<div class="row gtr-uniform">
+								<div class="col-12">
+									<div class="imageTop">
+										<img src="images/civ-5-grid.jpg" alt="Civilization 5"/>
+									</div>
+								</div>
+							</div>
+							<p>
+									With a square grid, it is easier to tell which tile is which, due to learning within school about 
+									X and Y coordinates, however with a hexagonal grid, the use of X and Y coordinates are still used, 
+									but a Z coordinate is also added due to the nature of a hexagonal tile.
+							</p>
+							<div class="webgl-content">
+									<div id="gameContainer" style="width: 960px; height: 600px"></div>
+									<div class="footer">
+									  <div class="webgl-logo"></div>
+									  <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+									  <div class="title">Hexagonal Grid Reference</div>
+									</div>
+								  </div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Jamie Briggs. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
