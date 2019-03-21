@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jamie Briggs - PS4 PSSL Shader Environment</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+				<a href="../../index.html" class="title">JAMIE BRIGGS</a>
+				<nav>
+					<ul>
+						<li><a href="../../index.html">Home</a></li>
+						<li><a href="../../aboutme.html">About Me</a></li>
+						<li><a href="../portfolio.html" class="active">Portfolio</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">PS4 PSSL Shader Environment</h1>
+							<div class="imageTop">
+								<span class="image fit"><img src="pssl-environment.png" alt="" /></span>
+
+							</div>
+							<p>I'd like to start by saying a few things.
+							</p>
+							<p><ul>
+									<li>
+										I'd like to say thank you to a couple of people who helped me with this project. 
+										Firstly Dan Hodgson, who supervised the project from the start to the end.
+										 And also Chris Rook, for giving guidance and also acting as second marker for
+										this dissertation.
+									</li>
+									<li>This project is covered by an NDA (None Disclosure Agreement) with Sony therefor 
+										it cannot be released to the public, however I am hoping to create a public 
+										version which removes any implementation of PSSL and the PlayStation 4's 
+										and instead replace it with GLSL (OpenGL's Shader Language).</li>
+								</ul>
+							</p>
+							<p>
+								Towards the end of my Computer Games Programming degree, I was required to create 
+								an individual project. For this project I created an environment in 
+								which graphical shaders were created for the PlayStation 4 without the 
+								required skill set to write PSSL (PlayStation Shader Language) scripts.
+							</p>
+							<p>
+								To start with, research went into various different shader environments found online. 
+								Due to the PSSL language being covered by an NDA, no environments were found online 
+								which created PSSL shaders, however there were quite a few which used GLSL.
+							</p>
+							<p>
+								Next, the interface was made, which was done using WPF and C#. Two iterations of 
+								this design was done, due to the first design not being to my own liking. 
+								The second design created was then compared with the first design using a 
+								survey to tell which design would be the preferred one, and the second 
+								was preferred greatly.
+							</p>
+							<p>
+								After this, OpenGL was implemented into the program as previewing PSSL is 
+								not possible on other platforms other than a PlayStation 4 and it 
+								was decided that the shaders which were previewed would be in GLSL 
+								and then exported into PSSL.
+							</p>
+							<p>
+								Once the view port was set up and models could be imported for previewing, 
+								shader editing was then implemented using two main settings types on the left 
+								of the program. The two types of settings were 'Basic' and 'Advanced'.
+								<ul>
+									<li>
+										'Basic' settings gives options such as adding ripple effects, 
+										giving a toon shader, changing basic lighting colour.
+									</li>
+									<li>
+										'Advanced' settings gives the option of writing in GLSL 
+										straight into the editor with an error log implemented on the bottom 
+										if there is any problems within the written code.
+									</li>
+								</ul>
+							</p>
+							<p><span class="image right"><img src="pssl-environment.png" alt="Shader Environment" /></span>
+								Once this was all done, a text box and two buttons was then added to 
+								the top to give the shader created a name and to then export the 
+								shader in either GLSL or PSSL. The reason to adding a button for 
+								GLSL despite the application being aimed at PSSL was due to the 
+								application already previewing in GLSL therefor it made sense to 
+								just export that generated code also. The PSSL button however 
+								converts the GLSL code into a format readable by the PlayStation 4 
+								and any projects which have the functionality to load in PSSL shader files.
+							</p>
+							<p>
+								Overall I thought this project was a huge success, as shaders exported were 
+								able to be used within the PlayStation 4 and using 
+								user feedback through a survey, the application 
+								itself looked to a professional standard. This 
+								program is something I'd hopefully like to come 
+								back to once I am able to use the PlayStation 4's once 
+								again may it be through university through my masters or 
+								through other means as I feel this program with a bit more work 
+								could be used within a real life scenario to easily create 
+								PlayStation 4 shaders to be used within games currently being 
+								developed on the PlayStation 4.
+							</p>
+							
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Jamie Briggs. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
