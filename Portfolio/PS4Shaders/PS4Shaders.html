@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Jamie Briggs - Normal Mapping, Height Mapping, and flocking using PS4's shader library PSSL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+				<a href="../../index.html" class="title">JAMIE BRIGGS</a>
+				<nav>
+					<ul>
+						<li><a href="../../index.html">Home</a></li>
+						<li><a href="../../aboutme.html">About Me</a></li>
+						<li><a href="../portfolio.html" class="active">Portfolio</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Normal Mapping, Height Mapping, and flocking using PS4's shader library PSSL</h1>
+							<div class="imageTop">
+								<span class="image fit"><img src="Flocking.png" alt="" /></span>
+
+							</div>
+							<p>With the PlayStation 4 having its own shader language to explore, 
+								the idea of having advanced visuals through various means with shader 
+								scripting was possible on the PlayStation 4.
+							</p>
+							<p>Work within PSSL had already been done whilst creating a basic 3D game on the PlayStation 4 
+								had already been done but at a basic level. This basic level included having 
+								vertex shader and pixel shader which essentially placed the object on screen with 
+								either a solid colour or texture and having some basic lighting. For this 3D game 
+								this was all that was needed as the game wasn't planned to be that complex, 
+								however I knew other things were most definitely possible through shaders 
+								to create even better visuals with the vertex and pixel shader.
+							</p>
+							<p>Normal mapping was first trialled within the pixel shader. Normal mapping uses a 
+								texture which consists of mainly red, green and blue colours 
+								(which will be explained why soon). The normal map texture essentially 
+								explains to the program how you would like light to be bounced off the object 
+								in order to create a form of inconsistency to the surface. This could make a 
+								cube reflect like it is made out of mud, or metal, or any other material. 
+								However when game modellers create assets for a game, they can make a normal 
+								map for the object in order to save polygons but still have a detailed model. 
+								An example of this could be a human face in which there is a reasonable amount 
+								of polygons on the model whilst making the normal map show the the little wrinkles 
+								and dimples of a face by making the light bounce off the skin slightly. The main 
+								use of normal mapping essentially is to make a model look complex whilst saving 
+								on polygons.
+							</p>
+							<p><span class="image right"><img src="normal_map_face.jpg" alt="Jamie Briggs" /></span>
+									Once this was explored with PSSL, I went further by including a height map 
+									in combination to the normal map. As shown on the right, a normal map adds 
+									detail to a model without the use of extra polygons by 
+									changing how light reflects on the surface. 
+									A height map is used with the vertex 
+									shader to make vertices move depending on a black and white texture; 
+									if you were to imagine the texture placed on the model the same way 
+									a texture is placed on a model, wherever there would be white, the 
+									vertex is raised and vise versa with the black.
+							</p>
+							<p>
+									Another thing which was explored within PSSL, was its own compute shader. 
+									The compute shader can be used for a variety of things and focuses on doing 
+									the calculations on different separate threads on the PlayStation 4's GPU; 
+									multi tasking can be done on such a high scale. So using the compute 
+									shader and placing around a high number of  objects on screen (+1000), 
+									I were able to do a flocking algorithm where all objects using the 
+									algorithm had to check where all the other objects were to see if the 
+									current object running the script had to do anything different in its 
+									movement in order to flock appropriately. Due to using the compute 
+									shader, all objects on screen managed to flock whilst having a high 
+									frame rate on the PlayStation 4 showing that the program wasn't 
+									struggling to keep up with the flock algorithm.
+							</p>
+							<p>
+									Working with the PSSL library has 
+									been such an amazing experience which 
+									few programmers are given the chance to freely 
+									play around with the hardware Sony has to 
+									offer in the PlayStation 4s.
+							</p>
+							<div class="row gtr-uniform">
+								<div class="col-8">
+									<div class="video-container">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/tQ6O4DPQ0K8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Jamie Briggs. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
