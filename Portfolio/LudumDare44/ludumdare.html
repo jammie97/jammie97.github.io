@@ -11,6 +11,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+		    <script src="Build/UnityLoader.js"></script>
+    <script>
+      UnityLoader.instantiate("unityContainer", "Build/Build.json");
+    </script>
 	</head>
 	<body class="is-preload">
 
@@ -41,13 +45,9 @@
 								goes on for 48 hours. The game created will be hosted on this page.
 							</p>
 							
-							<meta charset="utf-8">
-							<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-							<title>Unity WebGL Player | Ludum Dare 44</title>
-							<script src="Build/UnityLoader.js"></script>
-							<script>
-							  UnityLoader.instantiate("unityContainer", "Build/Build.json");
-							</script>
+							<div id="unityContainer" style="width: 1240px; height: 704px; margin: auto"></div>
+							
+
 						</div>
 					</section>
 
